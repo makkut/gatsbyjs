@@ -24,20 +24,6 @@ export default function Footer() {
         </div>
 
         <div className={styles.footerBox}>
-          <div className={styles.footerInfo}>
-            <p className={styles.footerBoxTitle}>ЮАР пластиковые окна</p>
-            <p className={styles.footerCopy}>© 2023. Все права защищены</p>
-            <p className={styles.footerLink}>
-              <a href="#">Datenschutzbestimmungen</a>
-            </p>
-          </div>
-          <div className={styles.footerAdress}>
-            <p className={styles.footerBoxTitle}>Адрес:</p>
-
-            <p className={styles.footerAdressText}>
-              Grabbepl. 4, 40213 Düsseldorf
-            </p>
-          </div>
           <div className={styles.footerContact}>
             <p className={styles.footerBoxTitle}>
               Buchungen und Reservierungen von Touren:
@@ -49,6 +35,38 @@ export default function Footer() {
               Email. safari@touristik.de
             </a>
           </div>
+          {/* <div className={styles.footerInfo}>
+            <p className={styles.footerBoxTitle}>ЮАР пластиковые окна</p>
+            <p className={styles.footerCopy}>© 2023. Все права защищены</p>
+            <p className={styles.footerLink}>
+              <a href="#">Datenschutzbestimmungen</a>
+            </p>
+          </div> */}
+          <div className={styles.footerAdress}>
+            <p className={styles.footerBoxTitle}>Адрес:</p>
+
+            <p className={styles.footerAdressText}>
+              Grabbepl. 4, 40213 Düsseldorf
+            </p>
+          </div>
+          <div className={styles.footerInfo}>
+            <p className={styles.footerBoxTitle}>ЮАР пластиковые окна</p>
+            <p className={styles.footerCopy}>© 2023. Все права защищены</p>
+            <p className={styles.footerLink}>
+              <a href="#">Datenschutzbestimmungen</a>
+            </p>
+          </div>
+          {/* <div className={styles.footerContact}>
+            <p className={styles.footerBoxTitle}>
+              Buchungen und Reservierungen von Touren:
+            </p>
+            <a className={styles.footerPhone} href="tel:08333333000">
+              Tel. 0833 33 33000
+            </a>
+            <a className={styles.footerMail} href="mailto:safari@touristik.de">
+              Email. safari@touristik.de
+            </a>
+          </div> */}
         </div>
         <div className={styles.footerSocialmedia}>
           <a href="#" className={styles.socialItem}>
