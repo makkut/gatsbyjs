@@ -11,7 +11,9 @@ import "swiper/css/pagination";
 export default function Slider() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.h2}>Наши работы</h2>
+      <h2 className={styles.h2} id="portfolio">
+        Наши работы
+      </h2>
       <Swiper
         navigation={true}
         pagination={{

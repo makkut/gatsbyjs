@@ -27,8 +27,13 @@ export default function Header() {
             </div>
             <ul className={styles.navMenu}>
               <li className={styles.li}>
-                <Link className={styles.a} to="/#appEntwicklung">
+                <Link className={styles.a} to="/#info">
                   <p>О нас</p>
+                </Link>
+              </li>
+              <li className={styles.li}>
+                <Link className={styles.a} to="/#sale">
+                  <p>Наши преимущества</p>
                 </Link>
               </li>
               <li className={styles.li}>
@@ -64,6 +69,11 @@ export default function Header() {
               <li className={styles.li}>
                 <Link className={styles.a} to="/#info">
                   <p>О нас</p>
+                </Link>
+              </li>
+              <li className={styles.li}>
+                <Link className={styles.a} to="/#sale">
+                  <p>Наши преимущества</p>
                 </Link>
               </li>
               <li className={styles.li}>

@@ -7,7 +7,7 @@ import styles from "./Footer.module.scss";
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id="contact">
       <div className={styles.container}>
         <div className={styles.footerLogo}>
           <a href="#" className={styles.logoLink}>

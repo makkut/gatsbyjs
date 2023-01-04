@@ -1,6 +1,6 @@
 import * as React from "react";
 import Footer from "../components/Footer/Footer";
-import Info from "../components/Info/Info";
+import Sale from "../components/Sale/Sale";
 import Header from "../components/Header/Header";
 import ContactIcons from "../components/ContactIcons/ContactIcons";
 import Banner from "../components/Banner/Banner";
@@ -29,11 +29,15 @@ const IndexPage = () => {
   return (
     <div onMouseMove={prellaxHandler} onTouchMove={prellaxHandlerMobile}>
       <Header />
-      <ContactIcons />
-      <Banner ref={ref} />
-      <Info />
-      <Slider/>
-      <Footer />
+      <main>
+        <ContactIcons />
+        <Banner ref={ref} />
+        <Sale />
+        <Slider />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
