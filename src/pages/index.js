@@ -1,6 +1,7 @@
 import * as React from "react";
 import Footer from "../components/Footer/Footer";
 import Sale from "../components/Sale/Sale";
+import Info from "../components/Info/Info";
 import Header from "../components/Header/Header";
 import ContactIcons from "../components/ContactIcons/ContactIcons";
 import Banner from "../components/Banner/Banner";
@@ -33,6 +34,7 @@ const IndexPage = () => {
         <ContactIcons />
         <Banner ref={ref} />
         <Sale />
+        <Info />
         <Slider />
       </main>
       <footer>
