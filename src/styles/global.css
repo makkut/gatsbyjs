@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@use "../../public/font.scss";
+
 *,
 *::before,
 *::after {
@@ -8,7 +13,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+h2{
+    font-size: x-large;
+}
 body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;

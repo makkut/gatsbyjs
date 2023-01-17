@@ -4,8 +4,9 @@ import Sale from "../components/Sale/Sale";
 import Info from "../components/Info/Info";
 import Header from "../components/Header/Header";
 import ContactIcons from "../components/ContactIcons/ContactIcons";
-import Banner from "../components/Banner/Banner";
+import Banner2 from "../components/Banner2/Banner2";
 import Slider from "../components/Slider/Slider";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const IndexPage = () => {
   const ref = React.useRef(null);
@@ -28,19 +29,22 @@ const IndexPage = () => {
     transformBanner(x, y);
   };
   return (
-    <div onMouseMove={prellaxHandler} onTouchMove={prellaxHandlerMobile}>
-      <Header />
-      <main>
-        <ContactIcons />
-        <Banner ref={ref} />
-        <Sale />
-        <Info />
-        <Slider />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <ParallaxProvider>
+      <div onMouseMove={prellaxHandler} onTouchMove={prellaxHandlerMobile}>
+        <Header />
+        <main>
+          <ContactIcons />
+          <Banner2 />
+          {/* <Banner ref={ref} /> */}
+          <Sale />
+          <Info />
+          <Slider />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </ParallaxProvider>
   );
 };
 

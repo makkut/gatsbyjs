@@ -50,7 +50,7 @@ export default function Info() {
             <div className={styles.titel}>
               <div className={styles.titelInner}>
                 СВЫШЕ&nbsp;<span className={styles.titelNum}>2,1</span>
-                &nbsp;МЛН.РУБ
+                &nbsp;МЛН РУБ
               </div>
             </div>
             <div className={styles.content}>
@@ -60,8 +60,8 @@ export default function Info() {
           <div className={styles.leftItem}>
             <div className={styles.titel}>
               <div className={styles.titelInner}>
-                БОЛЕЕ&nbsp;<span className={styles.titelNum}>120 000</span>
-                &nbsp;ОКОН
+                БОЛЕЕ&nbsp;<span className={styles.titelNum}>120&nbsp;000 </span>
+                ОКОН
               </div>
             </div>
             <div className={styles.content}>

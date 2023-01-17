@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/open-sans-v29-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/open-sans-v29-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/open-sans-v29-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/open-sans-v29-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./fonts/open-sans-v29-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/open-sans-v29-latin-regular.svg#OpenSans")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Chango";
+  src: url("./fonts/Chango-Regular.eot");
+  src: local("Chango Regular"), local("Chango-Regular"),
+    url("./fonts/Chango-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/Chango-Regular.woff2") format("woff2"),
+    url("./fonts/Chango-Regular.woff") format("woff"),
+    url("./fonts/Chango-Regular.ttf") format("truetype"),
+    url("./fonts/Chango-Regular.svg#Chango-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
