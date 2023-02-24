@@ -23,12 +23,47 @@ export default function Contacts() {
           <p className={styles.footerAdressText}>г. Кизляр ул. Победы 65</p>
           <h4 className={styles.h4}>Режим работы:</h4>
           <p className={styles.footerAdressText}>
-            Пн-Сб. 08:30– 17:00 <br />
+            Пн-Сб. 08:30 - 17:00 <br />
             Перерыв: 12:00 - 13:00 <br />
             Вс. Выходной
           </p>
         </div>
-        <div style={{ position: "relative", overflow: "hidden" }}>
+        <div
+          className={styles.maps}
+          style={{ position: "relative", overflow: "hidden" }}
+        >
+          <a
+            href="https://yandex.ru/maps/org/yuar/1795939067/?utm_medium=mapframe&utm_source=maps"
+            style={{
+              color: "#eee",
+              fontSize: "12px",
+              position: "absolute",
+              top: "0px",
+            }}
+          >
+            Юар
+          </a>
+          <a
+            href="https://yandex.ru/maps/11009/kizlyar/category/windows/184107727/?utm_medium=mapframe&utm_source=maps"
+            style={{
+              color: "#eee",
+              fontSize: "12px",
+              position: "absolute",
+              top: "14px",
+            }}
+          >
+            Окна в Кизляре
+          </a>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=46.722764%2C43.842353&mode=poi&poi%5Bpoint%5D=46.722704%2C43.842269&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1795939067&z=20.98"
+            width={560}
+            height={400}
+            frameborder={1}
+            allowfullscreen={true}
+            style={{ position: "relative" }}
+          ></iframe>
+        </div>
+        {/* <div style={{ position: "relative", overflow: "hidden" }}>
           <a
             href="https://yandex.ru/maps/org/yuar/1795939067/?utm_medium=mapframe&utm_source=maps"
             style={{
@@ -59,7 +94,7 @@ export default function Contacts() {
             allowfullscreen="true"
             style={{ position: "relative" }}
           ></iframe>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -1,9 +1,11 @@
 .container {
+  padding-top: 80px;
 }
 .wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .h2 {
   text-align: center;
@@ -14,4 +16,23 @@
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.contacts {
+  margin-right: 50px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .wrap {
+    display: block;
+  }
+  .contacts {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .maps {
+    display: flex;
+    justify-content: center;
+  }
 }
