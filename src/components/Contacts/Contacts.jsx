@@ -1,0 +1,66 @@
+import styles from "./Contacts.module.scss";
+import React from "react";
+
+export default function Contacts() {
+  return (
+    <div className={styles.container} id="contact">
+      <h2 className={styles.h2}>Контакты</h2>
+      <div className={styles.wrap}>
+        <div className={styles.contacts}>
+          <h4 className={styles.h4}>Телефон:</h4>
+          <p>
+            <a className={styles.footerPhone} href="tel:+79285502551">
+              89285502551
+            </a>
+          </p>
+          <h4 className={styles.h4}>E-mail:</h4>
+          <p>
+            <a className={styles.footerMail} href="mailto:safari@touristik.de">
+              safari@touristik.de
+            </a>
+          </p>
+          <h4 className={styles.h4}>Адрес:</h4>
+          <p className={styles.footerAdressText}>г. Кизляр ул. Победы 65</p>
+          <h4 className={styles.h4}>Режим работы:</h4>
+          <p className={styles.footerAdressText}>
+            Пн-Сб. 08:30– 17:00 <br />
+            Перерыв: 12:00 - 13:00 <br />
+            Вс. Выходной
+          </p>
+        </div>
+        <div style={{ position: "relative", overflow: "hidden" }}>
+          <a
+            href="https://yandex.ru/maps/org/yuar/1795939067/?utm_medium=mapframe&utm_source=maps"
+            style={{
+              color: "#eee",
+              fontSize: "12px",
+              position: "absolute",
+              top: "0px",
+            }}
+          >
+            Юар
+          </a>
+          <a
+            href="https://yandex.ru/maps/11009/kizlyar/category/windows/184107727/?utm_medium=mapframe&utm_source=maps"
+            style={{
+              color: "#eee",
+              fontSize: "12px",
+              position: "absolute",
+              top: "14px",
+            }}
+          >
+            Окна в Кизляре
+          </a>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=46.724058%2C43.842470&mode=search&oid=1795939067&ol=biz&sctx=ZAAAAAgBEAAaKAoSCViMutbehxxAEbK4%2F8h0fklAEhIJTl5kAn6N3z8RwmosYW2Mxz8iBgABAgMEBSgKOABAgVZIAWIjYWRkX3NuaXBwZXQ9bmV1cm9zdW1fZW1iZWRkaW5ncy8xLnhiMmNvbGxlY3Rpb25zX3JhbmtpbmdfbW9kZWw9Y29sbGVjdGlvbnNfcmVsZXZfd19kc3NtYiVjb2xsZWN0aW9uc19yZWxldl90aHJlc2hvbGQ9MTAwNTAwMDAwYiBjb2xsZWN0aW9uc19yZXR1cm5fYnlfZ2VvaWQ9dHJ1ZWoCZGWdAc3MTD2gAQCoAQC9AXR9HyHCAQX7ta%2FYBuoBAPIBAPgBAIICE9Cu0JDQoCDQutC40LfQu9GP0YCKAgCSAgUxMDAyMZoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=46.724058%2C43.842470&sspn=0.023352%2C0.009993&text=%D0%AE%D0%90%D0%A0%20%D0%BA%D0%B8%D0%B7%D0%BB%D1%8F%D1%80&z=16.4"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style={{ position: "relative" }}
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -6,13 +6,13 @@ import { Link } from "gatsby";
 export default function Contact() {
   return (
     <div className={styles.iconBlock}>
-      <Link className={styles.a} to="tel:+79093758111">
+      <Link className={styles.a} to="tel:+79285502551">
         <TbPhoneCall />
       </Link>
       <Link className={styles.a} to="mailto:gmail@gmail.org">
         <TbMail />
       </Link>
-      <Link className={styles.a} to="https://wa.me/+79093758111">
+      <Link className={styles.a} to="https://wa.me/+79285502551">
         <TbBrandWhatsapp />
       </Link>
     </div>

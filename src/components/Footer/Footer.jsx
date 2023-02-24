@@ -25,57 +25,38 @@ export default function Footer() {
 
         <div className={styles.footerBox}>
           <div className={styles.footerContact}>
-            <p className={styles.footerBoxTitle}>
-              Buchungen und Reservierungen von Touren:
-            </p>
-            <a className={styles.footerPhone} href="tel:08333333000">
-              Tel. 0833 33 33000
+            <p className={styles.footerBoxTitle}>Наши контакты:</p>
+            <a className={styles.footerPhone} href="tel:+79285502551">
+              Tel. 89285502551
             </a>
             <a className={styles.footerMail} href="mailto:safari@touristik.de">
               Email. safari@touristik.de
             </a>
           </div>
-          {/* <div className={styles.footerInfo}>
-            <p className={styles.footerBoxTitle}>ЮАР пластиковые окна</p>
-            <p className={styles.footerCopy}>© 2023. Все права защищены</p>
-            <p className={styles.footerLink}>
-              <a href="#">Datenschutzbestimmungen</a>
-            </p>
-          </div> */}
           <div className={styles.footerAdress}>
             <p className={styles.footerBoxTitle}>Адрес:</p>
 
-            <p className={styles.footerAdressText}>
-              Grabbepl. 4, 40213 Düsseldorf
-            </p>
+            <p className={styles.footerAdressText}>г. Кизляр ул. Победы 65</p>
           </div>
           <div className={styles.footerInfo}>
             <p className={styles.footerBoxTitle}>ЮАР пластиковые окна</p>
             <p className={styles.footerCopy}>© 2023. Все права защищены</p>
             <p className={styles.footerLink}>
-              <a href="#">Datenschutzbestimmungen</a>
+              {/* <a href="#">Datenschutzbestimmungen</a> */}
             </p>
           </div>
-          {/* <div className={styles.footerContact}>
-            <p className={styles.footerBoxTitle}>
-              Buchungen und Reservierungen von Touren:
-            </p>
-            <a className={styles.footerPhone} href="tel:08333333000">
-              Tel. 0833 33 33000
-            </a>
-            <a className={styles.footerMail} href="mailto:safari@touristik.de">
-              Email. safari@touristik.de
-            </a>
-          </div> */}
         </div>
         <div className={styles.footerSocialmedia}>
-          <a href="#" className={styles.socialItem}>
+          <a href="https://wa.me/+79285502551" className={styles.socialItem}>
             <BsWhatsapp color="#ff0103" />
           </a>
-          <a href="#" className={styles.socialItem}>
+          <a
+            href="https://www.instagram.com/okna_kizlyar_yuar/"
+            className={styles.socialItem}
+          >
             <BsInstagram color="#ff0103" />
           </a>
-          <a href="#" className={styles.socialItem}>
+          <a href="https://t.me/+79285502551" className={styles.socialItem}>
             <FaTelegramPlane color="#ff0103" />
           </a>
         </div>

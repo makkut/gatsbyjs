@@ -26,11 +26,11 @@ export default function Header() {
               </div>
             </div>
             <ul className={styles.navMenu}>
-              <li className={styles.li}>
+              {/* <li className={styles.li}>
                 <Link className={styles.a} to="/#info">
                   <p>О нас</p>
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.li}>
                 <Link className={styles.a} to="/#sale">
                   <p>Наши преимущества</p>
@@ -66,11 +66,11 @@ export default function Header() {
               </div>
             </div>
             <ul className={styles.navMenu}>
-              <li className={styles.li}>
+              {/* <li className={styles.li}>
                 <Link className={styles.a} to="/#info">
                   <p>О нас</p>
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.li}>
                 <Link className={styles.a} to="/#sale">
                   <p>Наши преимущества</p>
@@ -120,10 +120,10 @@ export default function Header() {
               <li className={styles.liMobile}>
                 <Link
                   className={styles.aMobile}
-                  to="/#info"
                   onClick={closedMenu}
+                  to="/#sale"
                 >
-                  <p>О нас</p>
+                  <p>Наши преимущества</p>
                 </Link>
               </li>
               <li className={styles.liMobile}>

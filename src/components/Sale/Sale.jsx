@@ -8,11 +8,9 @@ import { BsCheck2Square } from "react-icons/bs";
 
 export default function Info() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="sale">
       <div className={styles.wrap}>
-        <h2 className={styles.h2} id="sale">
-          Наши преимущества
-        </h2>
+        <h2 className={styles.h2}>Наши преимущества</h2>
         <div className={styles.items}>
           <div className={styles.item}>
             <TfiRulerPencil color="#ff0103" className={styles.itemImg} />

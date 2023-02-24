@@ -1,6 +1,6 @@
 .container {
   background-color: #8080801c;
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -14,11 +14,11 @@
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+.item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .itemImg {
   font-size: 40px;

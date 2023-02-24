@@ -8,21 +8,18 @@
       format("embedded-opentype"),
     /* IE6-IE8 */ url("./fonts/open-sans-v29-latin-regular.woff2")
       format("woff2"),
-    /* Super Modern Browsers */
-      url("./fonts/open-sans-v29-latin-regular.woff") format("woff"),
-    /* Modern Browsers */
-      url("./fonts/open-sans-v29-latin-regular.ttf")
+    /* Super Modern Browsers */ url("./fonts/open-sans-v29-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/open-sans-v29-latin-regular.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("./fonts/open-sans-v29-latin-regular.svg#OpenSans")
-      format("svg"); /* Legacy iOS */
+      url("./fonts/open-sans-v29-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 @font-face {
   font-family: "Chango";
   src: url("./fonts/Chango-Regular.eot");
   src: local("Chango Regular"), local("Chango-Regular"),
-    url("./fonts/Chango-Regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("./fonts/Chango-Regular.eot?#iefix") format("embedded-opentype"),
     url("./fonts/Chango-Regular.woff2") format("woff2"),
     url("./fonts/Chango-Regular.woff") format("woff"),
     url("./fonts/Chango-Regular.ttf") format("truetype"),
@@ -30,4 +27,43 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "Ruslan Display";
+  src: url("./fonts/RuslanDisplay.eot");
+  src: local("Ruslan Display"), local("RuslanDisplay"),
+    url("./fonts/RuslanDisplay.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/RuslanDisplay.woff2") format("woff2"),
+    url("./fonts/RuslanDisplay.woff") format("woff"),
+    url("./fonts/RuslanDisplay.ttf") format("truetype"),
+    url("./fonts/RuslanDisplay.svg#RuslanDisplay") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Mechanica B Pro Comb";
+  src: url("./fonts/pf_mechanica_b_pro_comb.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/pf_mechanica_b_pro_comb.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/pf_mechanica_b_pro_comb.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/pf_mechanica_b_pro_comb.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/pf_mechanica_b_pro_comb.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/pf_mechanica_b_pro_comb.svg#pf_mechanica_b_pro_comb")
+      format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "Tektur Tight Black";
+  src: url("./fonts/tektur_tight_black.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/tektur_tight_black.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/tektur_tight_black.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/tektur_tight_black.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/tektur_tight_black.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/tektur_tight_black.svg#tektur_tight_black") format("svg"); /* Chrome < 4, Legacy iOS */
 }

@@ -1,0 +1,52 @@
+.container {
+  height: 100vh;
+  .wrap {
+    height: 100%;
+    // top: -68px;
+    position: absolute;
+  }
+  .titelBlock {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slideBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 145px;
+    color: #ffffff;
+  }
+  .mainBtn {
+    background-color: rgba(255, 3, 3, 0.705);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .mainBtn:hover {
+    background-color: rgb(255, 3, 3) !important;
+  }
+  .h1 {
+    font-family: "PF Mechanica B Pro Comb" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px;
+    color: #0b6391;
+  }
+  .p {
+    // color: #0b6391;
+    margin-bottom: 20px;
+  }
+}
