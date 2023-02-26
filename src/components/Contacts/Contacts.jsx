@@ -58,8 +58,8 @@ export default function Contacts() {
             src="https://yandex.ru/map-widget/v1/?ll=46.722764%2C43.842353&mode=poi&poi%5Bpoint%5D=46.722704%2C43.842269&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1795939067&z=20.98"
             width={560}
             height={400}
-            frameborder={1}
-            allowfullscreen={true}
+            frameBorder="1"
+            allowFullScreen
             style={{ position: "relative" }}
           ></iframe>
         </div>
@@ -91,7 +91,7 @@ export default function Contacts() {
             width="560"
             height="400"
             frameborder="1"
-            allowfullscreen="true"
+            allowfullscreen
             style={{ position: "relative" }}
           ></iframe>
         </div> */}
