@@ -5,8 +5,25 @@ import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import { TfiRulerPencil } from "react-icons/tfi";
 import { SiAdguard } from "react-icons/si";
 import { BsCheck2Square } from "react-icons/bs";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function Info() {
+  const sale = useStaticQuery(
+    graphql`
+      query {
+        allContentfulSale {
+          nodes {
+            title
+            desriptions {
+              desriptions
+            }
+          }
+        }
+      }
+    `
+  );
+  const nodes = sale.allContentfulSale.nodes;
+  console.log(nodes);
   return (
     <div className={styles.container} id="sale">
       <div className={styles.wrap}>
@@ -35,48 +52,23 @@ export default function Info() {
 
             <div className={styles.itemTitle}>Гарантия до 12 лет</div>
           </div>
-          {/* <div className={styles.item}>
-          <div className={styles.itemImg}></div>
-          <div className={styles.itemTitle}></div>
-        </div> */}
         </div>
-        {/* <div style={{ position: "relative", overflow: "hidden" }}>
-        <a
-          href="https://yandex.ru/maps/11009/kizlyar/?utm_medium=mapframe&utm_source=maps"
-          style={{
-            color: "#eee",
-            fontSize: "12px",
-            position: "absolute",
-            top: "0px",
-          }}
-        >
-          Кизляр
-        </a>
-        <a
-          href="https://yandex.ru/maps/11009/kizlyar/house/ogorodny_pereulok_28/YE8YcQdjQEQCQFppfXR1c31hYg==/?ll=46.705930%2C43.841625&utm_medium=mapframe&utm_source=maps&z=18"
-          style={{
-            color: "#eee",
-            fontSize: "12px",
-            position: "absolute",
-            top: "14px",
-          }}
-        >
-          Огородный переулок, 28 — Яндекс Карты
-        </a>
-        <iframe
-          src="https://yandex.ru/map-widget/v1/-/CCUNF2hrLB"
-          width="300"
-          height="300"
-          frameBorder="0"
-          allowFullScreen
-          style={{ position: "relative" }}
-        ></iframe>
-      </div> */}
         <h3 className={styles.h3}>
           Почему клиенты выбирают наши пластиковые окна:
         </h3>
         <div className={styles.wrap2}>
-          <div className={styles.items2}>
+          {nodes.map((el, index) => {
+            return (
+              <div className={styles.items2} key={index}>
+                <div className={styles.item2}>
+                  <BsCheck2Square color="#ff0103" className={styles.itemImg} />
+                  <h4 className={styles.h4}>{el.title}</h4>
+                </div>
+                <p>{el.desriptions.desriptions}</p>
+              </div>
+            );
+          })}
+          {/* <div className={styles.items2}>
             <div className={styles.item2}>
               <BsCheck2Square color="#ff0103" className={styles.itemImg} />
               <h4 className={styles.h4}>КАЧЕСТВЕННАЯ ПРОДУКЦИЯ</h4>
@@ -134,7 +126,7 @@ export default function Info() {
               температуры и минусовые холода. И они очень энергоэффективны.
               Изучите каждый из наших профилей пластиковых окон ниже.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

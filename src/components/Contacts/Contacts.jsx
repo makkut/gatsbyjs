@@ -1,7 +1,25 @@
 import styles from "./Contacts.module.scss";
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function Contacts() {
+  const contact = useStaticQuery(
+    graphql`
+      query {
+        allContentfulContacts {
+          nodes {
+            adress
+            email
+            pereriv
+            vremya
+            telefon
+          }
+        }
+      }
+    `
+  );
+  const nodes = contact.allContentfulContacts.nodes[0];
+  console.log("nodes", nodes.adress);
   return (
     <div className={styles.container} id="contact">
       <h2 className={styles.h2}>Контакты</h2>
@@ -9,22 +27,22 @@ export default function Contacts() {
         <div className={styles.contacts}>
           <h4 className={styles.h4}>Телефон:</h4>
           <p>
-            <a className={styles.footerPhone} href="tel:+79285502551">
-              89285502551
+            <a className={styles.footerPhone} href={`tel:${nodes.telefon}`}>
+              {nodes.telefon}
             </a>
           </p>
           <h4 className={styles.h4}>E-mail:</h4>
           <p>
-            <a className={styles.footerMail} href="mailto:safari@touristik.de">
-              safari@touristik.de
+            <a className={styles.footerMail} href={`mailto:${nodes.email}`}>
+              {nodes.email}
             </a>
           </p>
           <h4 className={styles.h4}>Адрес:</h4>
-          <p className={styles.footerAdressText}>г. Кизляр ул. Победы 65</p>
+          <p className={styles.footerAdressText}>{nodes.adress}</p>
           <h4 className={styles.h4}>Режим работы:</h4>
           <p className={styles.footerAdressText}>
-            Пн-Сб. 08:30 - 17:00 <br />
-            Перерыв: 12:00 - 13:00 <br />
+            Пн-Сб. {nodes.vremya} <br />
+            Перерыв: {nodes.pereriv} <br />
             Вс. Выходной
           </p>
         </div>
