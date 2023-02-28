@@ -7,6 +7,7 @@ import ContactIcons from "../components/ContactIcons/ContactIcons";
 import Slider from "../components/Slider/Slider";
 import Contacts from "../components/Contacts/Contacts.jsx";
 import Banner3 from "../components/Banner3/Banner3";
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
@@ -27,5 +28,7 @@ const IndexPage = () => {
     </div>
   );
 };
+
+export const Head = () => <Seo />;
 
 export default IndexPage;

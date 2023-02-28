@@ -6,14 +6,30 @@ if (process.env.NODE_ENV === "development") {
 }
 module.exports = {
   siteMetadata: {
-    title: `okna`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `ЮАР Пластиковые окна`,
+    description: `Изготовления пластиковых и алюминиевых окон и дверей, жалюзей, рольставней в Кизляре`,
+    author: `@uar`,
+    siteUrl: `https://https://okna-uar.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/logo_krais.png`, // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
