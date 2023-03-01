@@ -23,7 +23,6 @@ export default function Info() {
     `
   );
   const nodes = sale.allContentfulSale.nodes;
-  console.log(nodes);
   return (
     <div className={styles.container} id="sale">
       <div className={styles.wrap}>

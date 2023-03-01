@@ -19,7 +19,6 @@ export default function Contacts() {
     `
   );
   const nodes = contact.allContentfulContacts.nodes[0];
-  console.log("nodes", nodes.adress);
   return (
     <div className={styles.container} id="contact">
       <h2 className={styles.h2}>Контакты</h2>

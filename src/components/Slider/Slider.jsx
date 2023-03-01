@@ -26,8 +26,6 @@ const Slider = () => {
     `
   );
   const nodes = slider.allContentfulSlider.nodes;
-  nodes.map((el) => console.log(el.foto.file.url));
-  console.log("slider >>", nodes);
   return (
     <div className={styles.container} id="portfolio">
       <h2 className={styles.h2}>Наши работы</h2>
