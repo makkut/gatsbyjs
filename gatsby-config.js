@@ -4,29 +4,30 @@
 if (process.env.NODE_ENV === "development") {
   require("dotenv").config();
 }
+
 module.exports = {
   siteMetadata: {
     title: `ЮАР Пластиковые окна`,
     description: `Изготовления пластиковых и алюминиевых окон и дверей, жалюзей, рольставней в Кизляре`,
     author: `@uar`,
-    siteUrl: `https://https://okna-uar.netlify.app/`,
+    siteUrl: `https://www.okna-uar.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [process.env.TRACKING_ID],
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
+    //     trackingIds: [process.env.TRACKING_ID],
+    //     pluginConfig: {
+    //       // Puts tracking script in the head instead of the body
+    //       head: true,
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
