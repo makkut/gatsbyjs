@@ -47,7 +47,7 @@ export default function Footer() {
               Tel. 89285502551
             </a>
             <a className={styles.footerMail} href={`mailto:${nodes.email}`}>
-              Email. safari@touristik.de
+              Email. {nodes.email}
             </a>
           </div>
           <div className={styles.footerAdress}>
