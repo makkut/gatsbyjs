@@ -19,27 +19,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          process.env.TRACKING_ID, // Google Analytics / GA
-          process.env.TRACKING_GTM, // Google Tag Manager
-        ],
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [process.env.TRACKING_ID],
         pluginConfig: {
           // Puts tracking script in the head instead of the body
-          head: false,
-          // Setting this parameter is also optional
-          respectDNT: true,
+          head: true,
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.TRACKING_ID,
       },
     },
     {
